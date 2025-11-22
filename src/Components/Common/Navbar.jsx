@@ -6,7 +6,7 @@ const Navbar = () => {
     const navRef = useRef(null);
 
   return (
-    <div className='z-50 flex fixed top-0 w-full items-start justify-end p-5'>
+    <div className='z-50 flex fixed top-0 w-full items-start justify-end'>
         {/* This is the main container for the menu button */}
         <div 
             onClick={() => setIsNavOpen(!isNavOpen)}

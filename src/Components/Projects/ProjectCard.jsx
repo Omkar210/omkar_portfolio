@@ -1,13 +1,8 @@
 import React from 'react'
 
-const project = () => {
+const ProjectCard = () => {
   return (
-    <div className='p-4'>
-      <div className='bg-red-200 pt-[45vh]'>
-        <h2 className='font-[Font2] text-black uppercase text-[9.5vw]'>Projects</h2>
-      </div>
-      <div className='-mt-4'>
-        <div className='w-full h-[700px] mb-4 flex gap-4'>
+    <div className='w-full h-[700px] mb-4 flex gap-4'>
           <div className='relative w-1/2 group transition-all rounded-none hover:rounded-[50px] overflow-hidden h-full'>
             <img className='h-full w-full object-cover' src='https://wallpapers.com/images/featured-full/4k-uhd-rztum34zdqmjp5oh.jpg'></img>
             <div className='opacity-0 transition-all group-hover:opacity-100 absolute top-0 flex items-center justify-center left-0 bg-black/70 w-full h-full'>
@@ -21,13 +16,7 @@ const project = () => {
             </div>
           </div>
         </div>
-        <div className='w-full h-[700px] mt-4 flex gap-4 bg-amber-400'>
-          <div className='w-1/2 h-full bg-green-900'></div>
-          <div className='w-1/2 h-full bg-blue-900'></div>
-        </div>
-      </div>
-    </div>
   )
 }
 
-export default project
+export default ProjectCard

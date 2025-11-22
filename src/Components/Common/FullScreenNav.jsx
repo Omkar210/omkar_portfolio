@@ -63,15 +63,15 @@ const FullScreenNav = () => {
     }, [isNavOpen]);
 
   return (
-    <div ref={fullScreenNav} id='FullScreenNav' className='FullScreenNav hidden h-screen overflow-hidden w-full fixed z-40 bg-black flex-col'>
+    <div ref={fullScreenNav} id='FullScreenNav' className='FullScreenNav hidden h-screen overflow-hidden w-full fixed z-40 flex-col'>
         <div className='h-screen w-full fixed'>
-            {/* <div className='h-full w-full flex'>
+            <div className='h-full w-full flex'>
                 <div className="stairing h-full w-1/5 bg-black"></div>
                 <div className="stairing h-full w-1/5 bg-black"></div>
                 <div className="stairing h-full w-1/5 bg-black"></div>
                 <div className="stairing h-full w-1/5 bg-black"></div>
                 <div className="stairing h-full w-1/5 bg-black"></div>
-            </div> */}
+            </div>
         </div>
         <div className='relative w-full flex justify-end p-5'>
             <div onClick={() => setIsNavOpen(false)} className='relative h-10 w-10 cursor-pointer'>
