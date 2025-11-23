@@ -18,7 +18,7 @@ const FullScreenNav = () => {
             display: 'block'
         })
         tl.to('.stairing', {
-            delay: 0.2,
+            delay: 0.1,
             height: '100%',
             stagger: {
                 amount: -0.3
@@ -73,8 +73,8 @@ const FullScreenNav = () => {
                 <div className="stairing h-full w-1/5 bg-black"></div>
             </div>
         </div>
-        <div className='relative w-full flex justify-end p-5'>
-            <div onClick={() => setIsNavOpen(false)} className='relative h-10 w-10 cursor-pointer'>
+        <div className='relative w-full flex justify-end p-23'>
+            <div onClick={() => setIsNavOpen(false)} className='relative h-0 w-0 cursor-pointer'>
                 <div className='absolute top-1/2 left-0 h-0.5 w-full -translate-y-1/2 -rotate-45 bg-white'></div>
                 <div className='absolute top-1/2 left-0 h-0.5 w-full -translate-y-1/2 rotate-45 bg-white'></div>
             </div>
@@ -85,7 +85,7 @@ const FullScreenNav = () => {
             onClick={() => setIsNavOpen(false)} 
             className='Link relative bg-black border-y border-white overflow-hidden'
         >
-            <h1 className=' font-[Font2] text-center pt-3 leading-[0.8] text-[7vw] uppercase'>Home</h1>
+            <h1 className=' font-[Font2] text-center pt-3 leading-[0.8] border-y-1 text-[7vw] uppercase'>Home</h1>
             {/* The absolute container for the scrolling items */}
             <div className='moveLink absolute flex w-full h-full top-0 left-0 bg-purple-400 text-black items-center'>
                 {/* The content that will scroll */}
@@ -133,7 +133,7 @@ const FullScreenNav = () => {
                 onClick={() => setIsNavOpen(false)} 
                 className='Link relative bg-black border-y border-white overflow-hidden'
             >
-                <h1 className=' font-[Font2] text-center pt-3 leading-[0.8] text-[7vw] uppercase'>Contact</h1>
+                <h1 className=' font-[Font2] text-center pt-3 leading-[0.8] border-y-1 text-[7vw] uppercase'>Contact</h1>
                 {/* The absolute container for the scrolling items */}
                 <div className='moveLink absolute flex w-full h-full top-0 left-0 bg-purple-400 text-black items-center'>
                     {/* The content that will scroll */}
